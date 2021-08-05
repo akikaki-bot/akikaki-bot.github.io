@@ -21,31 +21,3 @@
 
     $earthquake = $earthquakeXMLData->Earthquake; /* 6 */
 ?>
-<!DOCTYPE html>
-<html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1;">
-        <title>NHKの地震情報をゴニョゴニョして貰う方法 by nirot1r</title>
-    </head>
-    <body>
-
-        <h1><?= $earthquake["Time"] ?>に発生した地震</h1>
-        <p>
-            震源 : <?= $earthquake["Epicenter"] ?><br />
-            震源の深さ : <?= $earthquake["Depth"] ?><br />
-            マグニチュード : <?= $earthquake["Magnitude"] ?><br />
-            最大震度 : <?= $earthquake["Intensity"] ?>
-        </p>
-
-        <h2>震度マップ(概況)</h2>
-        <img src="<?= $imageBaseURL . $earthquake->Detail ?>" />
-
-        <h2>震度マップ(拡大)</h2>
-        <img src="<?= $imageBaseURL . $earthquake->Local ?>" />
-
-        <h2>震度マップ(広域)</h2>
-        <img src="<?= $imageBaseURL . $earthquake->Global ?>" />
-
-    </body>
-</html>
