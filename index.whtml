@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>あきかきボットの紹介ページ</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script language="javascript">
+　　　var isMSIE = /*@cc_on!@*/false;
+　　　if (isMSIE) {
+   　 if(confirm('akbt.tkはInternet Explorerに対応しておりません。本サイトを閲覧するためにはGoogle Chrome,Mozilla Firefox等のモダンなブラウザをご利用ください(無料)。対応ブラウザのダウンロードページに移動しますか？')==true) {
+        location.href="http://www.google.co.jp/chrome/intl/ja/landing_ff.html";
+    } else {
+    }
+} 
+</script>
+  </head>
+  <body>
+    <span class="icon-text">
+  <span class="icon">
+    <i class="fas fa-home"></i>
+  </span>
+  <span>Home</span>
+</span>
+    <section class="hero is-info is-fullheight" style="background: url(New背景.png) ">
+        <div class="hero-body">
+         <div class="container">
+         <h1 class="title is-size-1"> あきかきbotは全面的にサービスを終了しました。</h1>
+         <h1 class="title is-size-1"> 今までのご使用、ありがとうございました。</h1>
+         </div>
+       </div>
+  </section>
+</body>
+</html>
