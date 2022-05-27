@@ -1,4 +1,13 @@
-<?php
+
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1;">
+        <title>NHKの地震情報をゴニョゴニョして貰う方法 by nirot1r</title>
+    </head>
+    <body>
+  <?php
 ini_set(‘display_errors’, 1);
 error_reporting(E_ALL);
 ?>
@@ -25,15 +34,6 @@ error_reporting(E_ALL);
 
     $earthquake = $earthquakeXMLData->Earthquake; /* 6 */
 ?>
-<!DOCTYPE html>
-<html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1;">
-        <title>NHKの地震情報をゴニョゴニョして貰う方法 by nirot1r</title>
-    </head>
-    <body>
-
         <h1><?= $earthquake["Time"] ?>に発生した地震</h1>
         <p>
             震源 : <?= $earthquake["Epicenter"] ?><br />
